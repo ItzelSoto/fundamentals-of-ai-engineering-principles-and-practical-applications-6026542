@@ -1,5 +1,6 @@
 ipykernel==6.29.5
 jupyter==1.1.1
+torch
 pandas==2.2.3
 ipywidgets==8.1.5
 matplotlib==3.10.1
