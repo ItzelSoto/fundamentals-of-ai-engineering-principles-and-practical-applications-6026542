@@ -1,7 +1,24 @@
+# You'll build a semantic search system for a customer support team. The team needs to quickly
+# find relevant documentation based on user queries. A perfect application for the embeding techniques
+# We've covered so far.
+
 from sentence_transformers import SentenceTransformer, util
 import time
 import hashlib
 from typing import List, Dict
+
+# You'll be creating semantic search engine that uses sentence transformers that uses sentence transformers to
+# generate embedings for both documents and queries. You'll organise these embedings in a way that allows for
+# efficient searching. Second, You'll be implementing embedings caching.
+# Remember how we discussed that generating embedings can be computationaly expensive? By caching embedings
+# for common queries, you'll avoid regenirating them, saving time and resources.
+# Third, you'll use batching to process documents efficiently, instead of generating embedings one document at a time,
+# you'll process them in batches for better throughput. Finally, you'll implement the search function, that returns the most
+# semantically similar documents for each query, ranked by similarity scores.
+# The starter code provides the basic structure for semantic search engine, with methods for adding documents,
+# geting embedings for chaching, searching and getting cache statistics as a whole, your job is to implement these methods.
+# Take a look at the example usage at the bottom of the code. We have a sample set of support documents and queries. The code
+# processes these documents and then searches for each queries and report the results.
 
 
 class SemanticSearchEngine:
